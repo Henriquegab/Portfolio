@@ -1,14 +1,31 @@
 
-import Link from 'next/link;
+import Link from 'next/link';
 
 import {NavLinkContainer} from './styles';
 
-export default function NavLink(){
+import { useRouter } from 'next/router';
+
+
+
+interface Props {
+    title: string;
+    path: string;
+}
+
+export default function NavLink({title, path} : Props){
+    const router = useRouter();
+
+    
+
+    const isActive = router.pathname === path;
+    console.log(router.pathname);
+
     return (
-        <NavLinkContainer>
-            <Link href="/">
-                <a></a>
+        <NavLinkContainer isActive={isActive}>
+            <Link href={path}>
+                <a>{title}</a>
             </Link>
         </NavLinkContainer>
     )
 }
+
