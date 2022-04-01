@@ -12,7 +12,7 @@ function Experiencias() {
       <section>
         <ExperienciaItem 
           year="2020"
-          title="Primeiro Estágio"
+          title="Suporte Técnico - Estágio"
           description="
           Comecei meu primeiro estágio como suporte técnico na prefeitura de Montes Claros, 
           onde tive meu primeiro contato com o mercado de trabalho
@@ -20,7 +20,7 @@ function Experiencias() {
         />
         <ExperienciaItem 
           year="2021"
-          title="Desenvolvedor Laravel - Estágio"
+          title="Desenvolvedor Web - Estágio"
           description="
           Comecei minha carreira como desenvolvedor estagiando na Universidade estadual de Montes Claros.
           Desenvolvi sistemas utilizando Laravel e bootstrap, sendo o cargo que atualmente ocupo
