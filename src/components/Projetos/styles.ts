@@ -34,6 +34,23 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
     align-items: flex-end;
     position: relative;
 
+    &:hover{
+        
+        >section {
+            >div.text{
+                right: -12rem;
+            }
+            div.overlay{
+                transition: .5s;
+                opacity: 0.4;
+                
+            }
+        }
+        > button  a{
+            color: ${({theme}) => theme.primary};
+        }
+    }
+
     > button {
         height: 4rem;
         margin: 0 0 3rem 5rem;
@@ -57,6 +74,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
         background: url(${props => props.imgUrl}) no-repeat center;
         background-size: cover;
         position: relative;
+        
 
         > div.overlay {
 
@@ -65,6 +83,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
             height: 100%;
             background: ${({theme}) => theme.gradient};
             opacity: .75;
+            transition: .5s;
 
         }
 
@@ -98,7 +117,68 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
             margin: 3rem 5rem 0 0;
         }
 
+        > section > div.text {
+            text-align: right;
+            right: 0;
+            left: -10rem;
+        }
 
+        &:hover{
+            > section div.text{
+                left: -12rem;
+            }
+        }
+
+
+    }
+
+    @media(max-width: 1450px){
+        > section {
+            width: 40rem;
+        }
+    }
+    @media(max-width: 1000px){
+        > section {
+            width: 100%;
+
+            >div.text{
+                left: 1rem;
+                top: 1rem;
+            }
+        }
+
+        > button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            margin: 0;
+        }
+        &:nth-child(even){
+            flex-direction: row;
+
+            > section {
+            width: 100%;
+
+            >div.text{
+                left: 1rem;
+                top: 1rem;
+                text-align: left;
+            }
+
+
+        }
+        > button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            margin: 0;
+        }
+        &:hover {
+            >section >div.text{
+                left: 1rem;
+            }
+        }
+        }
     }
 
 `;
