@@ -11,10 +11,10 @@ export const Container = styled.section`
         justify-content: center;
         gap: 8rem;
 
-        @media(max-width: 1000px){
+        @media(max-width: 1300px){
             gap: 5rem;
         }
-        @media(max-width: 850px){
+        @media(max-width: 950px){
             gap: 3rem;
             flex-wrap: wrap;
             margin-top: 5rem;
@@ -27,7 +27,7 @@ export const ConhecimentoContainer = styled.div`
 
     display: flex;
     flex-direction: column-reverse;
-    gap: 8rem;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
     p{
@@ -52,7 +52,7 @@ export const ConhecimentoContainer = styled.div`
         }
     }
 
-    @media(max-width: 1000px){
+    @media(max-width: 1300px){
         p{
             font-size: 1rem;
         }
