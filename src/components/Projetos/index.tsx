@@ -4,6 +4,8 @@ import ProjetoItem from './ProjetoItem';
 import { Container } from './styles';
 import Link from 'next/link';
 
+import picture from '../../assets/AdminCEU.png';
+
 
 
 function Projetos() {
@@ -13,28 +15,13 @@ function Projetos() {
       <section>
         <ProjetoItem 
 
-          img=""
-          title="Projeto 1"
-          type="Website"
-          slug="teste"
+          img={picture}
+          title="AdminCEU"
+          type="Sistema Web"
+          slug="adminceu"
         
         />
-        <ProjetoItem 
-
-          img=""
-          title="Projeto 1"
-          type="Website"
-          slug="teste"
         
-        />
-        <ProjetoItem 
-
-          img=""
-          title="Projeto 1"
-          type="Website"
-          slug="teste"
-        
-        />
        
       </section>
       <button type="button">
