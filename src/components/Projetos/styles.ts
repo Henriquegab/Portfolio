@@ -160,7 +160,7 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
 
     @media(max-width: 1450px){
         > section {
-            width: 40rem;
+            width: 50rem;
         }
     }
     @media(max-width: 1000px){

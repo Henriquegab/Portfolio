@@ -9,10 +9,13 @@ export const Container = styled.section`
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 8rem;
+        gap: 7rem;
+        
 
         @media(max-width: 1300px){
             gap: 5rem;
+            
+            
         }
         @media(max-width: 950px){
             gap: 3rem;

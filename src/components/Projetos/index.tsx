@@ -20,9 +20,8 @@ function Projetos() {
           type="Sistema Web"
           slug="adminceu"
         
-        />
+        />      
         
-       
       </section>
       <button type="button">
         <Link href="/projetos">
