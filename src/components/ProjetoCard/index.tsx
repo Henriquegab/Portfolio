@@ -14,14 +14,14 @@ interface ProjetoCardProps {
 
 function ProjetoCard({ title, type, imgUrl, slug }: ProjetoCardProps) {
   return (
-    <Container>
+    <Container imgUrl={imgUrl}>
       <Link href={`/projetos/${slug}`}>
         <a>
           <div className="overlay">
             <section>
               <h1>{title}</h1>
               <h2>{type}</h2>
-            </section>
+            </ section>
           </div>
         </a>
       </Link>

@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import { ProjetosContainer } from '../../styles/ProjetosStyles';
-import picture from '../../assets/AdminCEU.png';
+import adminceu from '../../assets/AdminCEU.png';
 import ProjetoCard from '../../components/ProjetoCard';
 
 export default function Projetos(){
@@ -9,10 +9,10 @@ export default function Projetos(){
             <Header />
             <main className="container">
                 <ProjetoCard 
-                title = "Projeto 01"
+                title = "AdminCEU"
                 type = "Website"
-                slug = "testf"
-                imgUrl="https://avatars.githubusercontent.com/u/67250181?s=400&u=4750b82eaf738a93546dc67a2b5dfa67ea009a67&v=4"
+                slug = "adminceu"
+                imgUrl={adminceu}
 
                 />
                 <ProjetoCard 
