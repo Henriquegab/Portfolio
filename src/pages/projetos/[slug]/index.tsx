@@ -13,13 +13,14 @@ export default function Projeto(){
             />
 
             <main>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Molestias iusto at sapiente similique voluptatum omnis consequatur necessitatibus et nesciunt praesentium? 
-                Ab blanditiis accusantium accusamus hic.</p>
-            </main>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maxime molestias itaque vel nisi nulla non obcaecati amet placeat doloribus adipisci libero quo, sapiente suscipit quae!
+                Saepe velit natus cumque id corporis cupiditate sit animi fuga officiis suscipit sequi fugit, possimus excepturi obcaecati reiciendis ut molestiae atque dolore quibusdam vel? Magni molestiae sit minus. 
+                    Repudiandae odit eius obcaecati sint veritatis qui quisquam maiores expedita facere aliquid natus ratione error culpa, incidunt doloremque corrupti at adipisci voluptas asperiores, dolores ullam itaque!</p>
+            
             <button type='button'>
-                <a href="#">Ver projeto online</a>
+                <a href="http://adminceu.herokuapp.com/">Ver projeto online</a>
             </button>
+            </main>
 
         </ProjetoContainer>
     )
