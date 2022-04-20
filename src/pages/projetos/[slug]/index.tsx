@@ -2,23 +2,37 @@ import BannerProjeto from '../../../components/BannerProjeto';
 import Header from '../../../components/Header';
 import { ProjetoContainer } from '../../../styles/ProjetoStyles';
 import adminceu from '../../../assets/AdminCEU.png';
-export default function Projeto(){
+
+interface IProjeto {
+    slug: string;
+    title: string;
+    type: string;
+    description: string;
+    link: string;
+    thumbnail: string;
+}
+
+interface ProjetoProps {
+    projetos: IProjeto[];
+}
+
+export default function Projeto({projetos}: ProjetoProps){
     return(
         <ProjetoContainer>
             <Header />
             <BannerProjeto 
-                title="Admin CEU"
-                type="Website"
+                title = {projetos.projetos}
+                type = {projetos.type}
                 imgUrl={adminceu}
             />
 
             <main>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat maxime molestias itaque vel nisi nulla non obcaecati amet placeat doloribus adipisci libero quo, sapiente suscipit quae!
-                Saepe velit natus cumque id corporis cupiditate sit animi fuga officiis suscipit sequi fugit, possimus excepturi obcaecati reiciendis ut molestiae atque dolore quibusdam vel? Magni molestiae sit minus. 
-                    Repudiandae odit eius obcaecati sint veritatis qui quisquam maiores expedita facere aliquid natus ratione error culpa, incidunt doloremque corrupti at adipisci voluptas asperiores, dolores ullam itaque!</p>
+                <p>
+                    {projetos.description}
+                </p>
             
             <button type='button'>
-                <a href="http://adminceu.herokuapp.com/">Ver projeto online</a>
+                <a href={projetos.link}>Ver projeto online</a>
             </button>
             </main>
 
