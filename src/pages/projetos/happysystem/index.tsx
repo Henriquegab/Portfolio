@@ -1,7 +1,7 @@
 import BannerProjeto from '../../../components/BannerProjeto';
 import Header from '../../../components/Header';
 import { ProjetoContainer } from '../../../styles/ProjetoStyles';
-import adminceu from '../../../assets/AdminCEU.png';
+import happysystem from '../../../assets/happy.png';
 export default function Projeto(){
     return(
         <ProjetoContainer>
@@ -9,7 +9,7 @@ export default function Projeto(){
             <BannerProjeto 
                 title="Happy System"
                 type="Website"
-                imgUrl={adminceu}
+                imgUrl={happysystem}
             />
 
             <main>

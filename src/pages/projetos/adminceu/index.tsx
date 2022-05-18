@@ -7,18 +7,19 @@ export default function Projeto(){
         <ProjetoContainer>
             <Header />
             <BannerProjeto 
-                title="Admin CEU2"
+                title="AdminCEU"
                 type="Website"
                 imgUrl={adminceu}
             />
 
             <main>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Molestias iusto at sapiente similique voluptatum omnis consequatur necessitatibus et nesciunt praesentium? 
-                Ab blanditiis accusantium accusamus hic.</p>
+                <p>Admin CEU é um sistema administrativo para centros esportivos com o intuito de gerenciar o cadastro e pagamentos de alunos mensalmente cadastrados no sistema.
+
+                O sistema foi desenvolvido com o Laravel 9, PHP 8 e bootstrapp.
+                </p>
             </main>
             <button type='button'>
-                <a href="#">Ver projeto online</a>
+                <a href="https://adminceu.herokuapp.com/">Ver projeto online</a>
             </button>
 
         </ProjetoContainer>

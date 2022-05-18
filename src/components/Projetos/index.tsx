@@ -4,7 +4,8 @@ import ProjetoItem from './ProjetoItem';
 import { Container } from './styles';
 import Link from 'next/link';
 
-import picture from '../../assets/AdminCEU.png';
+import adminceu from '../../assets/AdminCEU.png';
+import happysystem from '../../assets/happy.png';
 
 
 
@@ -17,7 +18,7 @@ function Projetos() {
       <section>
         <ProjetoItem 
 
-          img={picture}
+          img={adminceu}
           title="AdminCEU"
           type="Sistema Web"
           slug="adminceu"
@@ -25,7 +26,7 @@ function Projetos() {
         />      
         <ProjetoItem 
 
-          img={picture}
+          img={happysystem}
           title="Happy System"
           type="Sistema Web"
           slug="happysystem"

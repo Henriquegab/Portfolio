@@ -1,6 +1,7 @@
 import Header from '../../components/Header';
 import { ProjetosContainer } from '../../styles/ProjetosStyles';
 import adminceu from '../../assets/AdminCEU.png';
+import happysystem from '../../assets/happy.png';
 import ProjetoCard from '../../components/ProjetoCard';
 
 interface IProjeto {
@@ -38,7 +39,7 @@ export default function Projetos({projetos}: ProjetoProps){
                 title = "Happysystem"
                 type = "Website"
                 slug = "happysystem"
-                imgUrl={adminceu}
+                imgUrl={happysystem}
 
                 />
                 
