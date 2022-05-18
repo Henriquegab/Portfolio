@@ -6,23 +6,11 @@ import Link from 'next/link';
 
 import picture from '../../assets/AdminCEU.png';
 
-interface IProjeto {
-  slug: string;
-  title: string;
-  type: string;
-  description: string;
-  link: string;
-  thumbnail: string;
-}
-
-interface ProjetosProps {
-  projetos: IProjeto[];
-}
 
 
-function Projetos({projetos}: ProjetosProps) {
+function Projetos() {
 
-  console.log(projetos);
+  
   return (
     <Container>
       <SectionTitle title="Ultimos Projetos" />
@@ -33,6 +21,14 @@ function Projetos({projetos}: ProjetosProps) {
           title="AdminCEU"
           type="Sistema Web"
           slug="adminceu"
+        
+        />      
+        <ProjetoItem 
+
+          img={picture}
+          title="Happy System"
+          type="Sistema Web"
+          slug="happysystem"
         
         />      
         
