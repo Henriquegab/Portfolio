@@ -6,9 +6,23 @@ import Link from 'next/link';
 
 import picture from '../../assets/AdminCEU.png';
 
+interface IProjeto {
+  slug: string;
+  title: string;
+  type: string;
+  description: string;
+  link: string;
+  thumbnail: string;
+}
+
+interface ProjetosProps {
+  projetos: IProjeto[];
+}
 
 
-function Projetos() {
+function Projetos({projetos}: ProjetosProps) {
+
+  console.log(projetos);
   return (
     <Container>
       <SectionTitle title="Ultimos Projetos" />

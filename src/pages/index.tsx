@@ -7,7 +7,20 @@ import Conhecimentos from '../components/Conhecimentos';
 import FormContato from '../components/FormContato';
 import Footer from '../components/Footer';
 
-export default function Home() {
+interface IProjeto {
+  slug: string;
+  title: string;
+  type: string;
+  description: string;
+  link: string;
+  thumbnail: string;
+}
+
+interface HomeProps {
+  projetos: IProjeto[];
+}
+
+export default function Home({projetos}: HomeProps) {
   return (
     
     <HomeContainer>
@@ -15,7 +28,7 @@ export default function Home() {
       <main className="container">
         <HomeHero />
         <Experiencias />
-        <Projetos />
+        <Projetos projetos={projetos}/>
         <Conhecimentos />
         <FormContato />
       </main>

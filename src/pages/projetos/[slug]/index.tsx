@@ -2,24 +2,39 @@ import BannerProjeto from '../../../components/BannerProjeto';
 import Header from '../../../components/Header';
 import { ProjetoContainer } from '../../../styles/ProjetoStyles';
 import adminceu from '../../../assets/AdminCEU.png';
-export default function Projeto(){
+
+interface IProjeto {
+    slug: string;
+    title: string;
+    type: string;
+    description: string;
+    link: string;
+    thumbnail: string;
+}
+
+interface ProjetoProps {
+    projetos: IProjeto[];
+}
+
+export default function Projeto({projetos}: ProjetoProps){
     return(
         <ProjetoContainer>
             <Header />
             <BannerProjeto 
-                title="Admin CEU"
-                type="Website"
+                title = {projetos.projetos}
+                type = {projetos.type}
                 imgUrl={adminceu}
             />
 
             <main>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Molestias iusto at sapiente similique voluptatum omnis consequatur necessitatibus et nesciunt praesentium? 
-                Ab blanditiis accusantium accusamus hic.</p>
-            </main>
+                <p>
+                    {projetos.description}
+                </p>
+            
             <button type='button'>
-                <a href="#">Ver projeto online</a>
+                <a href={projetos.link}>Ver projeto online</a>
             </button>
+            </main>
 
         </ProjetoContainer>
     )
