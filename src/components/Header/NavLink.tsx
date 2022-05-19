@@ -24,7 +24,7 @@ export default function NavLink({title, path, includes = false} : Props){
     }
 
     const isActive = verifyIfIsActive();
-    console.log(router.pathname);
+    console.log('Jésus');
 
     return (
         <NavLinkContainer isActive={isActive}>

@@ -16,10 +16,13 @@ export default function Projeto(){
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Molestias iusto at sapiente similique voluptatum omnis consequatur necessitatibus et nesciunt praesentium? 
                 Ab blanditiis accusantium accusamus hic.</p>
+                <div>
+                    <button type='button'>
+                    <a href="#">Ver projeto online</a>
+                    </button>
+                </div>
             </main>
-            <button type='button'>
-                <a href="#">Ver projeto online</a>
-            </button>
+            
 
         </ProjetoContainer>
     )

@@ -23,6 +23,12 @@ export const ProjetoContainer = styled.div`
 
         }
 
+        div {
+            display: flex;
+            justify-content: center;
+            
+        }
+
         button {
             background: ${({theme}) => theme.primary};
             padding: .8rem 3rem;

@@ -17,10 +17,13 @@ export default function Projeto(){
 
                 O sistema foi desenvolvido com o Laravel 9, PHP 8 e bootstrapp.
                 </p>
+                <div>
+                    <button type='button'>
+                    <a href="https://adminceu.herokuapp.com/">Ver projeto online</a>
+                    </button>
+                </div>
             </main>
-            <button type='button'>
-                <a href="https://adminceu.herokuapp.com/">Ver projeto online</a>
-            </button>
+            
 
         </ProjetoContainer>
     )
