@@ -13,9 +13,7 @@ export default function Projeto(){
             />
 
             <main>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Molestias iusto at sapiente similique voluptatum omnis consequatur necessitatibus et nesciunt praesentium? 
-                Ab blanditiis accusantium accusamus hic.</p>
+                <p>Sistema Happry System</p>
                 <div>
                     <button type='button'>
                     <a href="#">Ver projeto online</a>
