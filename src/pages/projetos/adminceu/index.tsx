@@ -19,7 +19,7 @@ export default function Projeto(){
                 </p>
                 <div>
                     <button type='button'>
-                    <a href="https://adminceu.herokuapp.com/">Ver projeto online</a>
+                    <a href="http://adminceu.herokuapp.com/">Ver projeto online</a>
                     </button>
                 </div>
             </main>
