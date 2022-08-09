@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    
+
     <HomeContainer>
       <Header />
       <main className="container">
@@ -18,11 +18,11 @@ export default function Home() {
         <Experiencias />
         <Projetos/>
         <Conhecimentos />
-        {/* <FormContato /> */}
+        <FormContato />
       </main>
 
       <Footer />
-      
+
     </HomeContainer>
   );
 }
