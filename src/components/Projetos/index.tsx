@@ -5,34 +5,43 @@ import { Container } from './styles';
 import Link from 'next/link';
 
 import adminceu from '../../assets/AdminCEU.png';
+import admingym from '../../assets/AdminGYM.png';
 import happysystem from '../../assets/happy.png';
 
 
 
 function Projetos() {
 
-  
+
   return (
     <Container>
       <SectionTitle title="Ultimos Projetos" />
       <section>
-        <ProjetoItem 
+        <ProjetoItem
 
           img={adminceu}
           title="AdminCEU"
           type="Sistema Web"
           slug="adminceu"
-        
-        />      
-        <ProjetoItem 
+
+        />
+        <ProjetoItem
+
+          img={admingym}
+          title="AdminGYM"
+          type="Sistema Web"
+          slug="admingym"
+
+        />
+        <ProjetoItem
 
           img={happysystem}
           title="Happy System"
           type="Sistema Web"
           slug="happysystem"
-        
-        />      
-        
+
+        />
+
       </section>
       <button type="button">
         <Link href="/projetos">
