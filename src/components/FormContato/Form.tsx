@@ -1,43 +1,35 @@
 import { useState } from 'react';
+import { sendContactMail } from '../../services/sendMail';
 import { FormContainer, Input, TextArea } from './styles';
 
 export default function Form(){
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("");
-  const [message, setMessage] = useState("");
 
-  let handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      let res = await fetch("https://httpbin.org/post", {
-        method: "POST",
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          mobileNumber: mobileNumber,
-        }),
-      });
-      let resJson = await res.json();
-      if (res.status === 200) {
-        setName("");
-        setEmail("");
-        setMessage("User created successfully");
-      } else {
-        setMessage("Some error occured");
+    const [nome, setNome] = useState('');
+    const [email, setEmail] = useState('');
+    const [mensagem, setMensagem] = useState('');
+
+    async function handleSubmit(event){
+      event.preventDefault();
+
+      try {
+        await sendContactMail(nome, email, mensagem);
+        setNome('');
+        setEmail('');
+        setMensagem('');
+
+      } catch(error){
+        console.log(error)
       }
-    } catch (err) {
-      console.log(err);
     }
-  };
+
 
     return (
-        <FormContainer>
+        <FormContainer onSubmit={handleSubmit}>
 
-                <Input onSubmit={handleSubmit} placeholder="Nome" name='name' required/>
-                <Input placeholder="E-mail" name="user_email" required type="email"/>
-                <TextArea placeholder='Mensagem' name='content' required />
+                <Input placeholder="Nome" value={nome} onChange={({target}) => setNome(target.value)} required/>
+                <Input placeholder="E-mail" value={email} onChange={({target}) => setEmail(target.value)} required type="email"/>
+                <TextArea placeholder='Mensagem' value={mensagem} onChange={({target}) => setMensagem(target.value)} required />
                     <button type='submit'>ENVIAR</button>
 
         </FormContainer>
