@@ -7,18 +7,18 @@ import { Container } from './styles';
 function Experiencias() {
   return (
     <Container>
-      <SectionTitle title="1 ano" description="de experiência" />
+      <SectionTitle title="Mais de 1 ano" description="de experiência" />
 
       <section>
-        <ExperienciaItem 
+        <ExperienciaItem
           year="2020"
           title="Suporte Técnico - Estágio"
           description="
-          Comecei meu primeiro estágio como suporte técnico na prefeitura de Montes Claros, 
+          Comecei meu primeiro estágio como suporte técnico na prefeitura de Montes Claros,
           onde tive meu primeiro contato com o mercado de trabalho
           "
         />
-        <ExperienciaItem 
+        <ExperienciaItem
           year="2021"
           title="Desenvolvedor Web - Estágio"
           description="
@@ -26,9 +26,9 @@ function Experiencias() {
           Desenvolvi sistemas utilizando Laravel e bootstrap, sendo o cargo que atualmente ocupo
           "
         />
-        
+
       </section>
-      
+
     </Container>
   );
 };
