@@ -39,7 +39,7 @@ export default function Projetos({projetos}: ProjetoProps){
                 <ProjetoCard
                 title = "AdminGYM"
                 type = "Website"
-                slug = "afmingym"
+                slug = "admingym"
                 imgUrl={admingym}
 
                 />
