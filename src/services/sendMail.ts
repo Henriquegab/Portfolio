@@ -1,12 +1,12 @@
 import axios from "axios";
 
-export const sendContactMail = async (name: string, email: string, content: string, title: string) => {
+export const sendContactMail = async (name: string, user_email: string, content: string, title: string) => {
   const data = {
     name,
-    email,
+    email: 'henriquepro8@gmail.com',
     content,
     title: 'Contato do Portifólio',
-    user_email: 'henriquepro8@gmail.com'
+    user_email
   };
 
   try{

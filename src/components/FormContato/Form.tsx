@@ -6,7 +6,7 @@ export default function Form(){
 
 
     const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
+    const [user_email, setUser_email] = useState('');
     const [content, setContent] = useState('');
     const [title, setTitle] = useState('');
 
@@ -14,9 +14,9 @@ export default function Form(){
       event.preventDefault();
 
       try {
-        await sendContactMail(nome, email, content, title);
+        await sendContactMail(nome, user_email, content, title);
         setNome('');
-        setEmail('');
+        setUser_email('');
         setContent('');
         setTitle('');
 
@@ -32,7 +32,7 @@ export default function Form(){
         <FormContainer onSubmit={handleSubmit}>
 
                 <Input placeholder="Nome" value={nome} onChange={({target}) => setNome(target.value)} required/>
-                <Input placeholder="E-mail" value={email} onChange={({target}) => setEmail(target.value)} required type="email"/>
+                <Input placeholder="E-mail" value={user_email} onChange={({target}) => setUser_email(target.value)} required type="email"/>
                 <TextArea placeholder='Mensagem' value={content} onChange={({target}) => setContent(target.value)} required />
                     <button type='submit'>ENVIAR</button>
 
