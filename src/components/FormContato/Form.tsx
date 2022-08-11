@@ -20,10 +20,10 @@ export default function Form(){
         setContent('');
         setTitle('');
 
-        console.log('deu certo!')
+        alert('Email enviado com sucesso!')
 
       } catch(error){
-        console.log(error)
+        alert(error)
       }
     }
 
