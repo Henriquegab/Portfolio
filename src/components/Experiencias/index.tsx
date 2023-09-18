@@ -10,20 +10,20 @@ function Experiencias() {
       <SectionTitle title="Mais de 1 ano" description="de experiência" />
 
       <section>
-        <ExperienciaItem
-          year="2020"
-          title="Suporte Técnico - Estágio"
-          description="
-          Comecei meu primeiro estágio como suporte técnico na prefeitura de Montes Claros,
-          onde tive meu primeiro contato com o mercado de trabalho
-          "
-        />
+        
         <ExperienciaItem
           year="2021"
           title="Desenvolvedor Web - Estágio"
           description="
           Comecei minha carreira como desenvolvedor estagiando na Universidade estadual de Montes Claros.
           Desenvolvi sistemas utilizando Laravel e bootstrap, sendo o cargo que atualmente ocupo
+          "
+        />
+        <ExperienciaItem
+          year="2023"
+          title="Desenvolvedor BackEnd Laravel"
+          description="
+          Desenvolvi endpoints api para uma aplicação em flutter de rotas seguras. Fui responsável por criar soluções e fornecer dados necessários para o funcionamento do sistema
           "
         />
 
